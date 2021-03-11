@@ -2,6 +2,8 @@ import React from "react";
 
 import { createGlobalStyle } from "styled-components";
 
+import { FashionCardWrapper } from "./homePage";
+
 import FashionShelf from "../components/fashionShelf";
 import PhotoFeed from "../components/photoFeed";
 import ProfilePage from "../components/profilePage";
@@ -18,7 +20,7 @@ const Home: React.FC<any> = (): any => {
   return (
     <>
       <GlobalStyle />
-      <div style={{ display: "flex", marginBottom: "32px" }}>
+      <FashionCardWrapper>
         <FashionShelf
           thumbnails="/images/thumbnails.jpg"
           avatar="/images/avatar.jpg"
@@ -29,7 +31,22 @@ const Home: React.FC<any> = (): any => {
           modelName="Model Name"
           avatar="/images/avatar.jpg"
         />
-      </div>
+        <FashionShelf
+          thumbnails="/images/thumbnails.jpg"
+          modelName="Model Name"
+          avatar="/images/avatar.jpg"
+        />
+        <FashionShelf
+          thumbnails="/images/thumbnails.jpg"
+          modelName="Model Name"
+          avatar="/images/avatar.jpg"
+        />
+        <FashionShelf
+          thumbnails="/images/thumbnails.jpg"
+          modelName="Model Name"
+          avatar="/images/avatar.jpg"
+        />
+      </FashionCardWrapper>
 
       <PhotoFeed
         avatar="/images/avatar.jpg"
